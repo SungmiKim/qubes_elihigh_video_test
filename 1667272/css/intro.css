@@ -1,0 +1,23 @@
+.txt {
+  position: absolute;
+  top: 106px;
+  left: 387px;
+  opacity: 0;
+}
+
+.txt.on {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn_intro {
+  position: absolute;
+  top: 989px;
+  left: 855px;
+  display: none;
+}

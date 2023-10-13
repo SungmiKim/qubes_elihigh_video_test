@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "TAHOMA";
+  font-style: normal;
+  src: url(../fonts/TAHOMA.woff) format("woff");
+}
+@font-face {
+  font-family: "TAHOMAB0";
+  font-style: normal;
+  src: url(../fonts/TAHOMAB0.woff) format("woff");
+}
+@font-face {
+  font-family: "TAHOMABD";
+  font-style: normal;
+  src: url(../fonts/TAHOMABD.woff) format("woff");
+}
+@font-face {
+  font-family: "TahomaR";
+  font-style: normal;
+  src: url(../fonts/TahomaR.woff) format("woff");
+}
+
+@font-face {
+  font-family: "JALNAN";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Jalnan.woff) format("woff");
+}
+
+@font-face {
+  font-family: "NanumSquareRoundL";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NanumSquareRoundL.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumSquareRoundR.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundB";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumSquareRoundB.woff) format("woff");
+}
+@font-face {
+  font-family: "NanumSquareRoundEB";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/NanumSquareRoundEB.woff) format("woff");
+}
+
+@font-face {
+  font-family: "NexonMaplestoryLight";
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/NexonMaplestoryLight.woff) format("woff");
+}
+@font-face {
+  font-family: "NexonMaplestoryBold";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/NexonMaplestoryBold.woff) format("woff");
+}
+@font-face {
+  font-family: "CookieRunR";
+  font-style: normal;
+  src: url(../fonts/CookieRun-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "CookieRunB";
+  font-style: normal;
+  src: url(../fonts/CookieRun-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "CookieRunBlk";
+  font-style: normal;
+  src: url(../fonts/CookieRun-Black.woff) format("woff");
+}

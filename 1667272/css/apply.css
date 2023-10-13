@@ -1,0 +1,167 @@
+.content {
+  background: url(../img/apply/apply_bg.png) no-repeat center / 100%;
+}
+
+.page_title {
+  background-image: url(../img/apply/bg_directive.png);
+}
+.has_guide {
+  position: absolute;
+  top: 230px;
+  left: 268px;
+}
+
+.screen1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1800px;
+}
+.place_list li {
+  position: relative;
+  width: 540px;
+  height: 320px;
+  border-radius: 30px;
+  background-color: rgb(0, 208, 227);
+  box-shadow: 0px 15px 6px 0px rgba(0, 199, 225, 0.2);
+  padding: 50px 40px 50px 50px;
+  display: flex;
+  align-items: center;
+}
+.place_list li:nth-child(2),
+.screen3 .result_card[data-num="2"] {
+  background-color: rgb(255, 180, 52);
+  box-shadow: 0px 15px 6px 0px rgba(255, 166, 29, 0.2);
+}
+.place_list li:nth-child(3),
+.screen3 .result_card[data-num="3"] {
+  background-color: rgb(255, 115, 139);
+  box-shadow: 0px 15px 6px 0px rgba(255, 101, 127, 0.2);
+}
+.place_list li:nth-child(4),
+.screen3 .result_card[data-num="4"] {
+  background-color: rgb(246, 130, 200);
+  box-shadow: 0px 15px 6px 0px rgba(240, 112, 248, 0.2);
+}
+.place_list li:nth-child(5),
+.screen3 .result_card[data-num="5"] {
+  background-color: rgb(132, 138, 255);
+  box-shadow: 0px 15px 6px 0px rgba(120, 128, 255, 0.2);
+}
+.place_list li:nth-child(6),
+.screen3 .result_card[data-num="6"] {
+  background-color: rgb(146, 213, 61);
+  box-shadow: 0px 15px 6px 0px rgba(122, 216, 38, 0.2);
+}
+
+.place_list li:nth-child(n + 4) {
+  margin-top: 80px;
+}
+.place_list li .name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-family: "NexonMaplestoryBold";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-shadow: 2.828px 2.828px 3px rgba(0, 0, 0, 0.25);
+  margin-left: 24px;
+}
+
+.screen2,
+.screen3 {
+  padding-top: 142px;
+}
+
+.screen3 .result_card {
+  width: 1330px;
+  height: 680px;
+  border-radius: 60px;
+  background-color: rgb(0, 208, 227);
+  box-shadow: 0px 15px 6px 0px rgba(0, 199, 225, 0.2);
+  margin: 116px auto 134px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 80px;
+}
+.screen3 .result_card .copy_img {
+  width: 896px;
+  height: 536px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+}
+.screen3 .result_card .right {
+  flex: 1;
+}
+.screen3 .result_card .name {
+  font-family: "NexonMaplestoryBold";
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-shadow: 2.828px 2.828px 3px rgba(0, 0, 0, 0.25);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.screen3 .result_card .name::before {
+  content: "공원";
+}
+.screen3 .result_card[data-num="2"] .name::before {
+  content: "도서관";
+}
+.screen3 .result_card[data-num="3"] .name::before {
+  content: "학교";
+}
+.screen3 .result_card[data-num="4"] .name::before {
+  content: "산";
+}
+.screen3 .result_card[data-num="5"] .name::before {
+  content: "시장";
+}
+.screen3 .result_card[data-num="6"] .name::before {
+  content: "놀이터";
+}
+
+.screen3 .result_card .place {
+  width: 230px;
+  height: 230px;
+  background: url(../img/apply/place1.png) no-repeat center / 100%;
+  margin: 53px auto 0;
+}
+.screen3 .result_card[data-num="2"] .place {
+  background-image: url(../img/apply/place2.png);
+}
+.screen3 .result_card[data-num="3"] .place {
+  background-image: url(../img/apply/place3.png);
+}
+.screen3 .result_card[data-num="4"] .place {
+  background-image: url(../img/apply/place4.png);
+}
+.screen3 .result_card[data-num="5"] .place {
+  background-image: url(../img/apply/place5.png);
+}
+.screen3 .result_card[data-num="6"] .place {
+  background-image: url(../img/apply/place6.png);
+}
+
+.screen3 .result_area .btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.ui-draggable.ui-draggable-handle.on {
+  transform: scale(1.4);
+}
+.place_list.scale li {
+  animation: 3s card_scale ease-in infinite;
+}

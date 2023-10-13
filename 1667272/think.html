@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>[사회] 31_1단원 01</title>
+    <!--공통 -->
+    <link href="../common/css/font.css" rel="stylesheet" />
+    <link href="../common/css/common.css" rel="stylesheet" />
+    <script src="./js/pageInfo.js"></script>
+    <script src="../common/js/jquery-3.6.1.min.js"></script>
+  </head>
+  <style>
+    #videoContainer {
+      position: relative;
+    }
+    #videoContainer.off {
+      pointer-events: none;
+    }
+
+    #videoContainer video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      z-index: 0;
+    }
+
+    .pop_txt {
+      position: absolute;
+      font-family: "NexonMaplestoryBold";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 150px;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      text-shadow: -4px 0 red, 0 4px red, 4px 0 red, 0 -4px red;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .pop_txt.on {
+      display: block;
+      animation: twinkleTxt 1.5s infinite alternate;
+    }
+    @keyframes twinkleTxt {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+
+    .pop_ct1 {
+      padding: 60px 40px 40px;
+      font-size: 80px;
+      border-radius: 40px;
+    }
+    .pop_ct1 p {
+      font-family: "NexonMaplestoryBold";
+    }
+    .btn_start {
+      cursor: pointer;
+      margin: 30px auto 0;
+      width: 308px;
+      height: 134px;
+      background: url(../common/images/btn/btn_intro_start.png) no-repeat center / 100%;
+      text-indent: -9999px;
+      animation: 2s zoom_in_out ease-in infinite;
+    }
+  </style>
+  <body>
+    <div id="wrap" data-page="think">
+      <div class="container">
+        <!-- 상단 고정 컨텐츠 -->
+        <!-- <div class="fixed top">
+          <header class="header"></header>
+        </div> -->
+        <!-- 상단바 고정 컨텐츠 -->
+
+        <div class="pop_txt">고장</div>
+
+        <!-- Video -->
+        <div id="videoContainer" class="hide">
+          <video id="video">
+            <source src="./movie/think.mp4" />
+            <p>Your browser doesn't support HTML5 video.</p>
+          </video>
+
+          <button type="button" id="playPause" class="Pause opa0 hide">Pause</button>
+          <!-- Video Controls -->
+          <div id="videoControls" class="fixed opa0">
+            <time class="current">00:00:00</time>
+            <progress class="progress_bar" value="0" min="0" max="100"></progress>
+            <input type="range" class="seek_bar opa0 hide" value="0" max="100" />
+
+            <time class="duration">00:00:00</time>
+          </div>
+        </div>
+        <div class="content hide">
+          <img src="./img/think/bg.png" alt="간지" />
+        </div>
+        <!-- Video End -->
+
+        <div class="fixed bottom hide">
+          <!-- 페이지 이동 버튼 -->
+          <a class="btn move btn_next"> </a>
+          <!-- 페이지 이동 버튼 End -->
+        </div>
+
+        <!-- 10초 Popup -->
+        <div class="pop_ct pop_next">
+          <img src="../common/images/pop/pop_next.png" alt="pop_next" />
+        </div>
+
+        <!-- Layer Popup -->
+        <div class="pop_bg"></div>
+        <div class="pop_ct pop_ct1">
+          <p>고장에 대해서 알아볼까요?</p>
+          <div class="btn btn_start"></div>
+        </div>
+      </div>
+    </div>
+    <!--공통 -->
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/video.js"></script>
+  </body>
+</html>

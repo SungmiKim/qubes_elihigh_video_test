@@ -1,0 +1,104 @@
+.content {
+  background: url(../img/concept1_1/bg.png) no-repeat center / 100%;
+}
+
+.page_title {
+  background-image: url(../img/concept1_1/bg_directive.png);
+}
+
+.place_list .place,
+.place_list .name,
+.place_list .has_guide {
+  position: absolute;
+}
+.place_list .has_guide {
+  top: 200px;
+  left: 200px;
+}
+.place_list.scale .place {
+  animation: 3s zoom_in_out ease-in infinite;
+}
+.place_list.scale .place.on {
+  animation: none;
+  pointer-events: none;
+}
+.place1 {
+  top: 132px;
+  left: 741px;
+}
+
+.place2 {
+  top: 403px;
+  left: 1563px;
+}
+.place3 {
+  top: 244px;
+  left: 93px;
+}
+.place4 {
+  top: 375px;
+  left: 437px;
+}
+.place5 {
+  top: 786px;
+}
+.place6 {
+  top: 722px;
+  left: 1385px;
+}
+.place7 {
+  top: 389px;
+  left: 1197px;
+}
+.place_list .name {
+  opacity: 0;
+}
+.place_list .place.on .name {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.place1 .name {
+  top: 237px;
+  left: 183px;
+}
+.place2 .name {
+  top: 170px;
+  left: 124px;
+}
+.place3 .name {
+  top: 197px;
+  left: 125px;
+}
+.place4 .name {
+  top: 193px;
+  left: 40px;
+}
+.place5 .name {
+  top: 194px;
+  left: 276px;
+}
+.place6 .name {
+  top: 175px;
+  left: 135px;
+}
+.place7 .name {
+  top: 216px;
+  left: 52px;
+}
+.pop_place {
+  background: transparent;
+  border-radius: 60px;
+  margin-top: 32px;
+  width: 1168px;
+  height: 828px;
+}
+
+.pop_place .place_name {
+  position: absolute;
+  top: 56px;
+  left: 11px;
+}
+.pop_place .pop_card {
+  display: block;
+  margin: auto;
+}

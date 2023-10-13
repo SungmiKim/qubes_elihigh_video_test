@@ -1,0 +1,25 @@
+/* 사회와 과학 별도 적용 */
+.completeStamp {
+  position: absolute;
+  top: 829px;
+  left: 1619px;
+  z-index: 10;
+  display: none;
+}
+
+.completeStamp img {
+  width: 261px;
+  animation: completeStamp 3s infinite;
+}
+
+.btn_intro {
+  width: 308px;
+  height: 134px;
+  background: url(../images/btn/btn_intro_start.png) no-repeat center / 100%;
+  text-indent: -9999px;
+  animation: 2s zoom_in_out ease-in infinite;
+}
+
+.btn_intro.ty2 {
+  background: url(../images/btn/btn_intro_start2.png) no-repeat center / 100%;
+}
